@@ -136,42 +136,61 @@
 
 <section class="rooms" id="rooms">
   <h2 class="heading">Accommodations</h2>
-
   <div class="room-list-container">
     <div class="room-list">
       <div class="room">
-        <img src="img/room-1.jpg" alt="Standard Room">
+        <div class="img-container">
+          <img src="img/room-1.jpg" alt="Standard Room">
+        </div>
         <div class="room-info">
           <h3>Standard Room</h3>
-          <p>Our cozy Standard Room is perfect for a weekend getaway or business trip. With one king-size bed or two twin-size beds, it can accommodate up to two guests. Amenities include a flat-screen TV, free Wi-Fi, and a private bathroom with a shower.</p>
+          <p>Our cozy Standard Room is perfect for a weekend getaway or business trip. With one
+             king-size bed or two twin-size beds, it can accommodate up to two guests. Amenities 
+             include a flat-screen TV, free Wi-Fi, and a private bathroom with a shower.</p>
           <div class="price">$100.00 <span>/night</span></div>
+          <button class="btn select-room" data-room-type="Standard Room">Select Room</button>
         </div>
       </div>
-
       <div class="room">
-        <img src="img/room-2.jpg" alt="Deluxe Room">
+        <div class="img-container">
+          <img src="img/room-2.jpg" alt="Deluxe Room">
+        </div>
         <div class="room-info">
           <h3>Deluxe Room</h3>
-          <p>Our spacious Deluxe Room is ideal for a family vacation or longer stay. With two queen-size beds, it can accommodate up to four guests. Amenities include a flat-screen TV, free Wi-Fi, and a private bathroom with a bathtub and shower.</p>
+          <p>Our spacious Deluxe Room is ideal for a family vacation or longer stay. 
+            With two queen-size beds, it can accommodate up to four guests. 
+            Amenities include a flat-screen TV, free Wi-Fi, and a private bathroom with a bathtub and shower.</p>
           <div class="price">$150.00 <span>/night</span></div>
+          <button class="btn select-room" data-room-type="Deluxe Room">Select Room</button>
         </div>
       </div>
-
       <div class="room">
-        <img src="img/room-3.jpg" alt="Executive Room">
+        <div class="img-container">
+          <img src="img/room-3.jpg" alt="Executive Room">
+        </div>
         <div class="room-info">
           <h3>Executive Room</h3>
-          <p>Our luxurious Executive Room is perfect for a special occasion or VIP guest. With one king-size bed, it can accommodate up to two guests. Amenities include a flat-screen TV, free Wi-Fi, a private bathroom with a spa tub, and access to our exclusive Executive Lounge.</p>
+          <p>Our luxurious Executive Room is perfect for a special occasion or VIP guest. 
+            With one king-size bed, it can accommodate up to two guests. Amenities include a flat-screen TV, free Wi-Fi, 
+            a private bathroom with a spa tub, and access to our exclusive Executive Lounge.</p>
           <div class="price">$200.00 <span>/night</span></div>
+          <button class="btn select-room" data-room-type="Executive Room">Select Room</button>
         </div>
       </div>
     </div>
   </div>
-
   <div class="reservation-form-container">
     <div class="reservation-form">
       <h3>Check Availability</h3>
       <form>
+        <div class="form-group">
+          <label for="room-type">Room Type</label>
+          <select id="room-type" name="room-type">
+            <option value="Standard Room">Standard Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Executive Room">Executive Room</option>
+          </select>
+        </div>
         <div class="form-group">
           <label for="check-in-date">Check In</label>
           <input type="date" id="check-in-date" name="check-in-date">
@@ -180,11 +199,12 @@
           <label for="check-out-date">Check Out</label>
           <input type="date" id="check-out-date" name="check-out-date">
         </div>
-        <button type="submit" class="btn submit">Check Availability</button>
+        <div class="form-group">
+          <button class="btn check-availability">Check Availability</button>
+        </div>
       </form>
     </div>
   </div>
-
 </section>
 
 <!-- packages section ends -->
@@ -562,43 +582,6 @@
     </div>
     <h1 class="credit"> created by <span>Dailywebdesign</span> | all rights reserved!! </h1>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

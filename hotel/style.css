@@ -146,135 +146,132 @@ header .search-bar-container label:hover{
     color: var(--orange);
 }
 
-/* Rooms section */
-.rooms {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .heading {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  /* Our Rooms section */
-  .room-list-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .room-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .room {
-    width: 300px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .room img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border-radius: 5px;
-  }
-  
-  .room-info {
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .room-info h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .room-info p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-  }
-  
-  
-  .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: right;
-    }
-    
-    .price span {
-    font-weight: normal;
-    font-size: 0.8em;
-    }
-    
-    /* Room List Container */
-    .room-list-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-    }
-    
-    /* Reservation form */
-    .reservation-form-container {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-    }
-    
-    .reservation-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 0 20px;
-    }
-    
-    .reservation-form h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    }
-    
-    .form-group {
-    margin-bottom: 20px;
-    }
-    
-    label {
-    display: block;
-    margin-bottom: 5px;
-    }
-    
-    input[type="date"] {
-    border: none;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    font-size: 1em;
-    margin-bottom: 10px;
-    }
-    
-    .btn.submit {
-    background-color: #3f51b5;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    }
-    
-    .btn.submit:hover {
-    background-color: #2c3e50;
-    }
+
+
+/* Our Rooms section */
+.room-list-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-bottom: 50px;
+}
+
+.room-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.room {
+width: 300px;
+height: 400px;
+margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 0.2s ease-in-out;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+
+.room:hover {
+transform: translateY(-10px);
+}
+
+.room img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+.room-info {
+width: 100%;
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+margin-top: auto;
+text-align: center;
+}
+
+.room-info h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.room-info p {
+font-size: 1.1em;
+margin-bottom: 15px;
+}
+
+.price {
+font-size: 1.2em;
+font-weight: bold;
+text-align: right;
+margin-top: auto;
+}
+
+.price span {
+font-weight: normal;
+font-size: 0.8em;
+}
+
+/* Reservation form */
+.reservation-form-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.reservation-form h3 {
+font-size: 1.5em;
+margin-bottom: 20px;
+}
+
+.reservation-form form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input[type="date"] {
+width: 100%;
+padding: 10px;
+font-size: 1.1em;
+border-radius: 5px;
+border: none;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+margin-bottom: 10px;
+}
+
+.btn {
+padding: 10px 20px;
+font-size: 1.1em;
+font-weight: bold;
+text-transform: uppercase;
+border-radius: 5px;
+border: none;
+background-color: #0077ff;
+color: #fff;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+background-color: #0066cc;
+}
 
 #menu-bar{
     color: #fff;
